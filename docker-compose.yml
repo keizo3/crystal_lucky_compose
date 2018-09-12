@@ -1,0 +1,27 @@
+version: '2'
+services:
+  crystal:
+    build:
+      context: "./"
+      dockerfile: "Dockerfile-crystal"
+    container_name: crystal
+    hostname: crystal
+    volumes:
+      - "../my_blog:/my_blog"
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+    privileged: true
+
+  postgres:
+    image: postgres
+    container_name: crystal.postgres
+    hostname: crystal.postgres
+    expose:
+      - 5432
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+    privileged: true
