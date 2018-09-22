@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /my_mfa
+cd /crystal_mfa
 bin/setup
 lucky dev

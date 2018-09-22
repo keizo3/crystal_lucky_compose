@@ -1,6 +1,6 @@
 FROM crystallang/crystal:0.26.1
 
-ARG dir_name="my_mfa"
+ARG dir_name="crystal_mfa"
 
 ENV PATH=$PATH:/usr/local/go/bin 
 ENV GOPATH=/go
