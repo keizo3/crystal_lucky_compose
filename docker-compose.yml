@@ -7,7 +7,7 @@ services:
     container_name: crystal
     hostname: crystal
     volumes:
-      - "../my_blog:/my_blog"
+      - "../my_mfa:/my_mfa"
     ports:
       - "3001:3001"
     depends_on:
