@@ -16,12 +16,13 @@ https://www.docker.com/docker-mac
 ### clone this repository and crystal lucky project repository
 ```
 git clone git@github.com:keizo3/crystal_lucky_compose.git
-git clone 
+git clone git@github.com:keizo3/crystal_mfa.git
 ```
 
 #### up
 in the cloned directory
 ```
+cd crystal_lucky_compose
 docker-compose up -d
 ```
 
@@ -36,5 +37,5 @@ docker-compose stop
 #### docker containers clean
 in the cloned directory
 ```
-docker-compose down --rmi local
+docker-compose down
 ```
