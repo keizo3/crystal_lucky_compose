@@ -13,9 +13,9 @@ Use the following group of containers
 #### install docker
 https://www.docker.com/docker-mac
 
-### clone mezcal repository
+### clone this repository and crystal lucky project repository
 ```
-git clone 
+git clone git@github.com:keizo3/crystal_lucky_compose.git
 git clone 
 ```
 
