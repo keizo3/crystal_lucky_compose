@@ -10,7 +10,7 @@ ENV DATABASE_URL=postgres://crystal.postgres/${dir_name}_development
 COPY entry_point.sh /entry_point.sh
 
 RUN apt-get update \
-  && apt-get install -y curl wget npm postgresql \
+  && apt-get install -y curl wget npm postgresql libqrencode-dev \
   && npm install -g n yarn \
   && n stable \
   && wget -q https://storage.googleapis.com/golang/go1.10.1.linux-amd64.tar.gz \
